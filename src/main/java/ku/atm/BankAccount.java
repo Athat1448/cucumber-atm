@@ -12,7 +12,8 @@ public class BankAccount {
    }
  
    public void deposit(double amount) {
-      balance = balance + amount;
+      if(amount >= 0){
+      balance = balance + amount;}
    }
 
    public void withdraw(double amount) throws NotEnoughBalanceException {

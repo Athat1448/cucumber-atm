@@ -11,5 +11,5 @@ Scenario: Deposit amount
     Then my account balance is 250
 
 Scenario: Deposit negative amount
-    When I deposit -100 from ATM
+    When I deposit -100 to ATM
     Then my account balance is 200
